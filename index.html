@@ -9,6 +9,39 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/bootstrap.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1,shrik-to-fit=0">
+    <script>
+        function getsize() {
+            const width = document.documentElement.clientWidth;
+            const height = document.documentElement.clientHeight;
+            document.getElementById("wh").innerHTML = "Szerokość: " + width + "px Wysokość: " + height + "px";
+        }
+    </script>
+</head>
+<body onload="getsize()" onresize="getsize()">
+    <div class="container">
+        <div class="starter-template text-center py-5">
+            <h1>Najpopularniejsze dystrybucje systemu Linux</h1>
+            <p style="font-size: 24px" id="wh"></p>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <a href="#"><img src="img/ubuntu.jpg" alt="Ubuntu" class="img-fluid"></a>
+                <p class="akapit text-center">Ubuntu</p>
+                <p class="px-2 py-1 text-center">System oparty na dystrybucji Debian, przeznaczony do zastosowań biurowych, domowych i serwerowych. Według sondaży Ubuntu jest najczęściej instalowaną dystrybucją Linuxa na komputerach osobistych.</p>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a href="#"><img src="img/mint.jpg" alt="Mint" class="img-fluid"></a>
+                <p class="akapit text-center">Mint</p>
+                <p class="px-2 py-1 text-center">Dystrybucja systemu GNU/Linux oparta na Ubuntu oraz Debianie, skierowana do początkujących użytkowników. Prostota użytkowania, komplet zainstalowanych aplikacji, wsparcie to najważniejsze zalety systemu.</p>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a href="#"><img src="img/kali.jpg" alt="Kali" class="img-fluid"></a>
+                <p class="akapit text-center">Kali</p>
+                <p class="px-2 py-1 text-center">Kali to system przeznaczony dla bardziej zaawansowanych użytkowników. Zawiera komplet narzędzi, które są wykorzystywane do przeprowadzania testów penetracyjnych, tj. bezpieczeństwa i łamania zabezpieczeń.</p>
+            </div>
+        </div>
+    </div>
+
 
 </body>
 </html>
